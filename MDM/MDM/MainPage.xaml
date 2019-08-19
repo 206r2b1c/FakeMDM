@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MDM"
+             x:Class="MDM.MainPage"
+             Title="國軍MDM V2.5967"
+             Icon="icon">
+
+    <StackLayout>
+        <WebView
+            x:Name="webView"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+        />
+    </StackLayout>
+    <ContentPage.ToolbarItems >
+
+        <!--<ToolbarItem Text="系統選單" 
+                     x:Name="SystemList"
+                     Clicked="OnToolbarItemClicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource" 
+                            Android="icon.png"  />
+            </ToolbarItem.Icon>
+        </ToolbarItem>-->
+        <ToolbarItem Text="上鎖-常駐營區" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="False" />
+        <ToolbarItem Text="上鎖-出差(QRCode)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="False" />
+        <ToolbarItem Text="上鎖-出差(WiFi)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="上鎖-近期到訪營區" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="上鎖-船艦模式" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="上鎖-任務模式" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="轉換一般營區" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="False" />
+        <ToolbarItem Text="定點解鎖" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="False" />
+        <ToolbarItem Text="船艦模式解鎖點列表" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="解鎖-密碼" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="定位狀況查詢" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="偽冒定位檢查" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="定位服務(GPS)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="自動上鎖設定" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="紀錄-上傳(WiFi)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="紀錄-查詢" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="新版檢查(WiFi)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="新版檢查(民網)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="版本更新(民網)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="安裝訊息加密APP(民網)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="安裝行動安全防護APP(民網)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="更新MDM設定(WiFi)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="註冊(WiFi)" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="關於程式" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="離開" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="解除APP" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="註冊電腦連線測試" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="Somc停用" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+        <ToolbarItem Text="Somc復原" Command="{Binding OtherCommand}" Order="Secondary" IsEnabled="True" />
+
+    </ContentPage.ToolbarItems>
+
+</ContentPage>
